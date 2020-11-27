@@ -4,20 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.app.ActivityManager;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.protexcreative.physicscalapp.Fragments.CalculatorFragment;
-import com.protexcreative.physicscalapp.Fragments.CategoryFragment;
+import com.protexcreative.physicscalapp.Fragments.AboutFragment;
+import com.protexcreative.physicscalapp.Fragments.SearchFragment;
 import com.protexcreative.physicscalapp.Fragments.FavouriteFragment;
 import com.protexcreative.physicscalapp.Fragments.HomeFragment;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,25 +47,20 @@ public class MainActivity extends AppCompatActivity {
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-
                     // switch case for menu.xml file menu
                     switch(menuItem.getItemId()){
                         case R.id.nav_home:
                             selectedFragment = new HomeFragment();
                             break;
-
-                        case R.id.nav_category:
-                            selectedFragment = new CategoryFragment();
+                        case R.id.nav_search:
+                            selectedFragment = new SearchFragment();
                             break;
-
                         case R.id.nav_favourite:
                             selectedFragment = new FavouriteFragment();
                         break;
-
-                        case R.id.nav_calculator:
-                            selectedFragment = new CalculatorFragment();
+                        case R.id.nav_about:
+                            selectedFragment = new AboutFragment();
                             break;
-
                     }
             // if the selected fragment is not null
             if(selectedFragment != null){
@@ -81,36 +70,4 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     };
-
-    @Override
-    public void onBackPressed(){
-
-
-        ActivityManager mngr = (ActivityManager) getSystemService( ACTIVITY_SERVICE );
-
-        List<ActivityManager.RunningTaskInfo> taskList = mngr.getRunningTasks(10);
-
-        if(taskList.get(0).numActivities == 1 &&
-                taskList.get(0).topActivity.getClassName().equals(this.getClass().getName())) {
-            final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-
-            builder.setTitle("Exit Physics Calculator?");
-            builder.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    MainActivity.super.onBackPressed();
-                }
-            });
-            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.dismiss();
-                }
-            });
-            builder.show();
-        }
-        else
-        {
-            super.onBackPressed();
-        }
-    }
-
 }

@@ -7,9 +7,9 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/nav_category"
-        android:icon="@drawable/ic_category"
-        android:title="Category"/>
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"/>
 
     <item
         android:id="@+id/nav_favourite"
@@ -17,8 +17,8 @@
         android:icon="@drawable/ic_favourite"/>
 
     <item
-        android:id="@+id/nav_calculator"
-        android:icon="@drawable/ic_calculator"
-        android:title="Calculator"/>
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_about"
+        android:title="About Us"/>
 
 </menu>
