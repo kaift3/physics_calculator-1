@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PhysicsCalApp">
-        <activity android:name=".CalculateActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".CategoryActivity" android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CalculateActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">

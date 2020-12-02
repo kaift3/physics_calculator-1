@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
-        android:layout_gravity="center"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/f"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        card_view:cardCornerRadius="4dp"
-        android:layout_margin="10dp"
-        card_view:cardBackgroundColor="@color/teal_200">
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/purple_500"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
 
             <TextView
-                android:id="@+id/fid"
-                android:layout_width="match_parent"
+                android:id="@+id/ft"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="fid"/>
+                android:text="Formula 5"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20dp"/>
 
             <TextView
-                android:id="@+id/name"
-                android:layout_width="match_parent"
+                android:id="@+id/fc"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="name"
-                android:layout_below="@+id/fid"/>
+                android:layout_below="@+id/ft"
+                android:text="Category 5"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="10dp" />
 
         </RelativeLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </RelativeLayout>

@@ -6,12 +6,15 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.protexcreative.physicscalapp.DataBase.DataBaseHelper;
 import com.protexcreative.physicscalapp.Fragments.AboutFragment;
-import com.protexcreative.physicscalapp.Fragments.SearchFragment;
+import com.protexcreative.physicscalapp.Fragments.CategoryFragment;
 import com.protexcreative.physicscalapp.Fragments.FavouriteFragment;
 import com.protexcreative.physicscalapp.Fragments.HomeFragment;
+import com.protexcreative.physicscalapp.Model.Formula;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +23,21 @@ public class MainActivity extends AppCompatActivity {
     // set selected fragment to null
     Fragment selectedFragment = null;
 
+    DataBaseHelper dataBaseHelper;
+    Formula formula;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        dataBaseHelper = new DataBaseHelper(getApplicationContext());
+//        formula = new Formula("f1", "Motion", "Speed Formula",  "Description", "", false, true);
+//        dataBaseHelper.addOne(formula);
+//        Toast.makeText(getApplicationContext(), "Added", Toast.LENGTH_SHORT).show();
+
+//        dataBaseHelper.deleteAll();
+//        dataBaseHelper.dropTable();
         // get UI ids
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -52,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.nav_home:
                             selectedFragment = new HomeFragment();
                             break;
-                        case R.id.nav_search:
-                            selectedFragment = new SearchFragment();
+                        case R.id.nav_category:
+                            selectedFragment = new CategoryFragment();
                             break;
                         case R.id.nav_favourite:
                             selectedFragment = new FavouriteFragment();

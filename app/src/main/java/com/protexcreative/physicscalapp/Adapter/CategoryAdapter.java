@@ -24,13 +24,13 @@ import com.protexcreative.physicscalapp.R;
 
 import java.util.List;
 
-public class FormulaAdapter extends RecyclerView.Adapter<FormulaAdapter.ViewHolder> {
+public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
     public Context mContext;
     public List<Formula> mFormula;
     public DataBaseHelper dataBaseHelper;
 
-    public FormulaAdapter(Context mContext, List<Formula> mFormula) {
+    public CategoryAdapter(Context mContext, List<Formula> mFormula) {
         this.mContext = mContext;
         this.mFormula = mFormula;
     }
@@ -38,8 +38,8 @@ public class FormulaAdapter extends RecyclerView.Adapter<FormulaAdapter.ViewHold
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.formula_item, viewGroup, false);
-        return new FormulaAdapter.ViewHolder(view);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.formula_item, viewGroup, false);
+        return new CategoryAdapter.ViewHolder(view);
     }
 
     @Override
@@ -49,6 +49,7 @@ public class FormulaAdapter extends RecyclerView.Adapter<FormulaAdapter.ViewHold
         dataBaseHelper = new DataBaseHelper(mContext);
 
         viewHolder.fname.setText(formula.getFname());
+        viewHolder.fcat.setText(formula.getFcat());
 
         viewHolder.fcard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,24 +61,25 @@ public class FormulaAdapter extends RecyclerView.Adapter<FormulaAdapter.ViewHold
         });
 
 
-        }
+    }
 
-        @Override
-        public int getItemCount() {
-            return mFormula.size();
-        }
+    @Override
+    public int getItemCount() {
+        return mFormula.size();
+    }
 
-        public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
-            public TextView fname;
-            public CardView fcard;
-            public ImageView ffav;
+        public TextView fname, fcat;
+        public CardView fcard;
+        public ImageView ffav;
 
-            public ViewHolder(@NonNull View itemView) {
-                super(itemView);
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
 
-                fname = itemView.findViewById(R.id.ft);
-                fcard = itemView.findViewById(R.id.f);
+            fname = itemView.findViewById(R.id.ft);
+            fcat = itemView.findViewById(R.id.fc);
+            fcard = itemView.findViewById(R.id.f);
         }
     }
 }
