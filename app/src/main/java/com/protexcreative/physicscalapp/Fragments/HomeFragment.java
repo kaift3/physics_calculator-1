@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         allFormulas = new ArrayList<>();
         allFormulas = dataBaseHelper.getAllFormulas();
-        Toast.makeText(getContext(), allFormulas.toString(), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getContext(), allFormulas.toString(), Toast.LENGTH_SHORT).show();
         formulaAdapter = new FormulaAdapter(getContext(), allFormulas);
         recyclerView.setAdapter(formulaAdapter);
 

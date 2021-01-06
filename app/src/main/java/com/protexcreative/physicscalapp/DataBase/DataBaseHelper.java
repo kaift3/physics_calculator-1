@@ -28,8 +28,24 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String createTableStatement = "CREATE TABLE " + FORMULA_TABLE + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, fid TEXT,fcat TEXT, fname TEXT, fdesc TEXT, fimg TEXT, isFav BOOL, isNew BOOL)";
         db.execSQL(createTableStatement);
-        Formula formula = new Formula("f1", "Motion", "Speed Formula",  "Description", "", false, true);
-        this.addOneCreate(formula, db);
+        Formula formula1 = new Formula("f1", "Motion", "Speed Formula",  "Description", "", false, true);
+        this.addOneCreate(formula1, db);
+        Formula formula2 = new Formula("f2", "Motion", "1st Law of Motion",  "Description", "", false, true);
+        this.addOneCreate(formula2, db);
+        Formula formula3 = new Formula("f3", "Motion", "2nd Law of Motion",  "Description", "", false, true);
+        this.addOneCreate(formula3, db);
+        Formula formula4 = new Formula("f4", "Motion", "3rd Law of Motion",  "Description", "", false, true);
+        this.addOneCreate(formula4, db);
+        Formula formula5 = new Formula("f5", "Work and Energy", "Work Formula",  "Description", "", false, true);
+        this.addOneCreate(formula5, db);
+        Formula formula6 = new Formula("f6", "Optics", "Lens Maker's Formula",  "Description", "", false, true);
+        this.addOneCreate(formula6, db);
+        Formula formula7 = new Formula("f7", "Optics", "Refractive Index Formula",  "Description", "", false, true);
+        this.addOneCreate(formula7, db);
+        Formula formula8 = new Formula("f8", "Thermodynamics", "Air Fuel Formula",  "Description", "", false, true);
+        this.addOneCreate(formula8, db);
+        Formula formula9 = new Formula("f9", "Thermodynamics", "Compressibility Factor Formula",  "Description", "", false, true);
+        this.addOneCreate(formula9, db);
     }
 
 //    This will be called when DB version is changed. (Forward/Backward Compatibility)

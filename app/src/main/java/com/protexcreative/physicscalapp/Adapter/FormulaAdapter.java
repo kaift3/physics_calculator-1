@@ -49,7 +49,7 @@ public class FormulaAdapter extends RecyclerView.Adapter<FormulaAdapter.ViewHold
         dataBaseHelper = new DataBaseHelper(mContext);
 
         viewHolder.fname.setText(formula.getFname());
-
+        viewHolder.fcat.setText(formula.getFcat());
         viewHolder.fcard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,7 +69,7 @@ public class FormulaAdapter extends RecyclerView.Adapter<FormulaAdapter.ViewHold
 
         public class ViewHolder extends RecyclerView.ViewHolder {
 
-            public TextView fname;
+            public TextView fname, fcat;
             public CardView fcard;
             public ImageView ffav;
 
@@ -78,6 +78,7 @@ public class FormulaAdapter extends RecyclerView.Adapter<FormulaAdapter.ViewHold
 
                 fname = itemView.findViewById(R.id.ft);
                 fcard = itemView.findViewById(R.id.f);
+                fcat = itemView.findViewById(R.id.fc);
         }
     }
 }

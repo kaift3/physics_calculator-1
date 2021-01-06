@@ -56,8 +56,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="60sp"
             android:layout_below="@+id/bar">
 
             <androidx.recyclerview.widget.RecyclerView

@@ -129,13 +129,725 @@
 
             </RelativeLayout>
 
+<!--            LAW 1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/law1"
+                android:layout_below="@+id/speed"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/u">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Initial Speed (m/s): "
+                        android:textColor="@color/black"
+                        android:id="@+id/uMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/uMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/uVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a"
+                    android:layout_below="@+id/u"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acceleration (m/s2): "
+                        android:textColor="@color/black"
+                        android:id="@+id/aMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/aMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/aVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t"
+                    android:layout_below="@+id/a"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time (s): "
+                        android:textColor="@color/black"
+                        android:id="@+id/tMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+<!--LAW 2-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/law2"
+                android:layout_below="@+id/law1"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Initial Distance (m): "
+                        android:textColor="@color/black"
+                        android:id="@+id/s1MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/s1MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/s1Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/u1"
+                    android:layout_below="@+id/s1"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Initial Speed (m/s): "
+                        android:textColor="@color/black"
+                        android:id="@+id/u1MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/u1MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/u1Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t1"
+                    android:layout_below="@+id/u1"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time (s): "
+                        android:textColor="@color/black"
+                        android:id="@+id/t1MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/t1MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/t1Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a1"
+                    android:layout_below="@+id/t1"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acceleration (m/s2): "
+                        android:textColor="@color/black"
+                        android:id="@+id/a1MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/a1MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/a1Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+<!--            LAW 3     -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/law3"
+                android:layout_below="@+id/law2"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/u2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Initial Speed (m/s): "
+                        android:textColor="@color/black"
+                        android:id="@+id/u2MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/u2MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/u2Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a2"
+                    android:layout_below="@+id/u2"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acceleration (m/s2): "
+                        android:textColor="@color/black"
+                        android:id="@+id/a2MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/a2MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/a2Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s2"
+                    android:layout_below="@+id/a2"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Initial Distance (m): "
+                        android:textColor="@color/black"
+                        android:id="@+id/s2MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/s2MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/s2Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/s3"
+                    android:layout_below="@+id/s2"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Final Distance (m): "
+                        android:textColor="@color/black"
+                        android:id="@+id/s3MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/s3MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/s3Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+<!--            COMPRESSIBILITY FACTOR-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cf"
+                android:layout_below="@+id/law2"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/z">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="z: "
+                        android:textColor="@color/black"
+                        android:id="@+id/zMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/zMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/zVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r"
+                    android:layout_below="@+id/z"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r: "
+                        android:textColor="@color/black"
+                        android:id="@+id/rMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/rMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/rVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t3"
+                    android:layout_below="@+id/r"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="t: "
+                        android:textColor="@color/black"
+                        android:id="@+id/t3MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/t3MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/t3Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+<!--            AFR-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/afr"
+                android:layout_below="@+id/cf"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ma">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ma: "
+                        android:textColor="@color/black"
+                        android:id="@+id/maMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/maMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/maVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mf"
+                    android:layout_below="@+id/ma"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mf: "
+                        android:textColor="@color/black"
+                        android:id="@+id/mfMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/mfMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/mfVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+<!--            RI-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ri"
+                android:layout_below="@+id/afr"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="c : "
+                        android:textColor="@color/black"
+                        android:id="@+id/cMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/cVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/v"
+                    android:layout_below="@+id/c"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="v: "
+                        android:textColor="@color/black"
+                        android:id="@+id/vMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/vMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/vVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+<!--            LMF-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lmf"
+                android:layout_below="@+id/ri"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mu">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mu: "
+                        android:textColor="@color/black"
+                        android:id="@+id/muMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/muMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/muVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r1"
+                    android:layout_below="@+id/mu"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r1: "
+                        android:textColor="@color/black"
+                        android:id="@+id/r1MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/r1MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/r1Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r2"
+                    android:layout_below="@+id/r1"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r2: "
+                        android:textColor="@color/black"
+                        android:id="@+id/r2MSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/r2MSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/r2Val"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+<!--            WORK-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/work"
+                android:layout_below="@+id/lmf"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/f">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="f: "
+                        android:textColor="@color/black"
+                        android:id="@+id/fMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/fMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/fVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d"
+                    android:layout_below="@+id/f"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="d: "
+                        android:textColor="@color/black"
+                        android:id="@+id/dMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/dMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/dVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deg"
+                    android:layout_below="@+id/d"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="deg: "
+                        android:textColor="@color/black"
+                        android:id="@+id/degMSG"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/degMSG"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/degVal"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"
                 android:textColor="@color/white"
                 android:text="Calculate"
-                android:layout_below="@+id/speed"
+                android:layout_below="@+id/work"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/cal"
                 android:clickable="true"

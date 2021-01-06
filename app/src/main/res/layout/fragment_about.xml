@@ -70,20 +70,19 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/devList1"
                     android:padding="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_below="@id/pfp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/pfp1"
-                        android:src="@color/purple_700"/>
+                        android:src="@drawable/ic_anu"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/dev1"
-                        android:text="Charshal"
+                        android:text="Anurag Patil"
                         android:layout_toRightOf="@+id/pfp1"
                         android:textSize="15dp"
                         android:textColor="@color/black"
@@ -103,13 +102,13 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/pfp2"
-                        android:src="@color/purple_700"/>
+                        android:src="@drawable/ic_cha"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/dev2"
-                        android:text="Charshal"
+                        android:text="Harshal Kudale"
                         android:layout_toRightOf="@+id/pfp2"
                         android:textSize="15dp"
                         android:textColor="@color/black"
@@ -129,13 +128,13 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/pfp3"
-                        android:src="@color/purple_700"/>
+                        android:src="@drawable/ic_kai"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/dev3"
-                        android:text="Charshal"
+                        android:text="Kaif Tamboli"
                         android:layout_toRightOf="@+id/pfp3"
                         android:textSize="15dp"
                         android:textColor="@color/black"
@@ -155,13 +154,13 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:id="@+id/pfp4"
-                        android:src="@color/purple_700"/>
+                        android:src="@drawable/ic_pra"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/dev4"
-                        android:text="Charshal"
+                        android:text="Pratik Temkar"
                         android:layout_toRightOf="@+id/pfp4"
                         android:textSize="15dp"
                         android:textColor="@color/black"
